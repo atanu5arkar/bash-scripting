@@ -23,6 +23,8 @@ CH-24
 
 - Can use test command to evaluate Boolean expressions. (See the man page for usage syntax)
 
+    * test <expression> is equivalent to [ <expression> ]
+
     * In Bash, semi-colon allows you to specify multiple commands on the same line. These cmds will be executed in sequence even if a few of them fail.
     
     Note: Use && if a command needs to run only when the previous one succeeds. 
@@ -30,4 +32,14 @@ CH-24
     * test does not return any visible output; only its exit status changes (0 or 1) as per the truthiness of the expression. 
     
     * $? is a special variable (shell parameter) that captures the exit status of the last cmd. You can use it to print the boolean result.
+
+- Flow Control: if then elif then else. At the end, type fi.
+
+- To run a command in the context of another command (called command substitution), use backticks or $().
+
+- In a for-loop, brace expansion {start..end} returns a list of strings.
+
+
+CH-25
+------
 
