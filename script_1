@@ -1,0 +1,6 @@
+#!/bin/bash
+
+test hell != Hell
+
+bool=$?
+echo bool = $bool

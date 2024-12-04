@@ -1,0 +1,46 @@
+- Starts in command mode.
+
+- Some commands (a i A I o O) get you into Insert mode, where you can type. They put the cursor at a certain location.
+
+    * Press Esc key to get back into command mode.
+
+- In command mode,
+
+    * x (delete)
+    * X (delete the left char)
+
+    * r (replace)
+    * p (paste the deleted one after)
+    * xp (swap two chars)
+
+    * u (undo)
+    * . (repeat last cmd)
+
+    * dd (cut the line) 
+    * yy (copy the line)
+    * p (paste after)
+    * P (paste before)
+
+    Note: To cut/copy multiple lines, enter a number before dd or yy.
+
+    * 0 or ^ (jump to the start of the line)
+    * $ (jump to the end)
+    * d0 and d$ (delete until the beginning or end of line)
+
+    * J (join current line with the next line)
+
+    * w b (jump to the next or prev word)
+    Note: prepend a number to jump over multiple words
+
+    * Combine d y with w b :
+    
+        dw (delete the word)
+        2dw (delete 2 words right)
+        yw (copy the word)
+
+    * ZZ to save and quit
+
+    * /str ?str (forward and backward search for a string). Press Enter and then use n N to move to the next or previous occurrence.
+
+    * To Find and Replace, switch to ex mode
+        <start>,<end> s/<old>/<new>/g
