@@ -43,3 +43,18 @@ CH-24
 CH-25
 ------
 
+- We can pass arguments to a script. They are held by shell parameters $1, $2, and so on.
+
+- Some special shell params:
+
+    0 (script name)
+    $ (script PID)
+    ? (last cmd's exit status)
+    # (no. of arguments)
+    * (string of all the args)
+
+- The shift statement discards the first param and renames the remaining ones, i.e., if called once, $2 becomes $1 and $# decreases by 1.
+
+- Use read to take user input into your scripts and store it in a variable.
+
+- Script and Shell Options (For Later)
